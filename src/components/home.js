@@ -6,21 +6,7 @@ import Pokeball from "../pokeball.png";
 import { connect } from "react-redux";
 
 class Home extends Component {
-  // state = {
-  //   posts: [],
-  // };
-
-  // componentDidMount() {
-  //   axios.get("https://jsonplaceholder.typicode.com/posts/").then((res) => {
-  //     this.setState({
-  //       posts: res.data.slice(0, 10),
-  //     });
-  //   });
-  // }
-
   render() {
-    console.log(this.props);
-
     const { posts } = this.props;
     const postList = posts.length ? (
       posts.map((post) => {
